@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cha {
+            background-color: aqua;
+            width: 500px;
+            height: 500px;
+            margin: 50px;
+            /* position: absolute; */
+            /* top: 50px; */
+            /* ralative để tạo tk cha và absolute tạo tk con
+            mặc định là static(thì k có top right left bottom*/
+            /* ưu tiên đè lên trước khi z-index càng cao */
+            /* bottom: 50px; */
+            /* right: 50px; */
+
+            position: relative;
+            z-index: -2; 
+
+        }
+        .child{
+            background-color: burlywood;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            right: 50px;
+            bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- position có tác dụng khi tk cha thay đổi thì tk con cx koong sao-->
+    <!-- <div class="cha">
+
+    </div>
+    <div class="child">
+        thẻ 2
+    </div> -->
+
+
+    <!-- relative -->
+    <div class="cha">
+        <div class="child">
+            thẻ 2
+        </div>
+    </div>
+
+</body>
+
+</html>

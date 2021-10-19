@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tran Duy Đăng</title>
+    
+</head>
+
+<body>
+
+    <h1>abc</h1>
+    <h2>abc</h2>
+    <h3>abc</h3>
+    <h4>abc</h4>
+    <h5>abc</h5>
+    <h6>abc</h6>
+
+    <center><p>Báo Dân Chí</p></center>
+
+    <p>Day la noi dung the p</p>
+    <span>day la nọi dung the span</span>
+    <b>la thẻ in đậm</b>
+    <i>thẻ in nghiêng</i>
+    <u>the gạch chân</u>
+
+    <table border="5">
+        <tr>
+            <td>1</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+    </table>
+    <!-- the a dùng để dẫn link đến trang web khác -->
+    <a href="https://www.facebook.com/">chuyển hướng đến fb</a>
+    <a href="./demo.html">chuyển trang khác</a>
+
+    <a href="./vender/11.jpg">img</a>
+
+    <!-- cùng cấp file thì dùng ./ để truy vấn vào nó -->
+    <!-- ../ thì ra ngoài 1 thư mục -->
+    <img src="./vender/screenshot_1604396012.pn" alt="lỗi link">
+    <a href="./vd/abc.html">hihi</a>
+
+
+    <!-- gạch đầu dòng -->
+    <ul>
+        <!-- dấu chấm đầu dòng -->
+        <li>lop 1</li>
+        <li>lop 2</li>
+        <li>lop 3</li>
+    </ul>
+    <ol>
+        <!-- số đầu dòng 1, 2, 3,... -->
+        <li>hihi</li>
+        <li>hehe</li>
+    </ol>
+
+    <form action="" method="">
+        <p>Nhap ten: </p>
+        <p>
+            <input type="text" placeholder="Họ" name="Name" value="">
+            <input type="text" placeholder="Họ" name="Name" value="">
+        </p>
+        <!-- placeholder chữ mờ trong hộp input -->
+        <!-- value giá trị người nhập khi reload lại trang thì sẽ hiện thị 
+     cho tên người nhập, muốn lấy giá trị mới nhất người dùng thì để trống
+    vs đổi tên fb... -->
+
+        <p>password</p>
+        <input type="password" placeholder="password" name="password" value="">
+
+        <p>ngày sinh</p>
+        <select name="day" id="">
+            <!-- select- option là  1 cặp đi phải có nhau -->
+            <option value="">ngày</option>
+            <option value="monday">1</option>
+            <option value="tuesday">2</option>
+            <option value="thusday">3</option>
+
+        </select>
+
+        <p>Giới tính</p>
+        <input type="radio" name="gender" value="male"> Nam
+        <input type="radio" name="gender" value="female"> Nữ
+        <!-- 2 cái name của input đặc biệt phải trùng nhau thì mới chọn
+            được 1 trong 2 -->
+
+        <input type="file">
+        <!--chọn ảnh để up lên  -->
+        <br>
+        <!-- thẻ br dùng để xuống dòng -->
+
+        <input type="checkbox" name="it" value="">Java
+        <input type="checkbox" name="it" value="">C
+        <input type="checkbox" name="it" value="">C#
+        <!-- checkbox dùng để lấy nhiều giá trị người dùng
+        cần 1 trong các giá trị thì dùng radio-->
+
+        <br />
+        <button type="button">
+            Đăng Ký
+        </button>
+        <!-- button và submit đều dùng để xác nhận khi người dùng thành công
+            khi ấn vào -->
+        <button type="submit">
+            Đăng Ký submit
+        </button>
+        <!-- submit sẽ có chức năng để reload lại trang và gửi dữ liệu ở 
+        trong form lên đường dẫn action và method (dòng 65).
+        submit thì học về server sẽ rõ hơn-->
+
+        <button type="reset">
+            reset
+        </button>
+        <!-- reset dùng để reset lại những giá trị ban đầu trở về rỗng -->
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/
+        ddaEtFOsFeM?start=5" title="YouTube video player" frameborder="0"
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+         gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </form>
+
+
+</body>
+
+</html>

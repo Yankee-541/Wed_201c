@@ -1,0 +1,63 @@
+.container{
+    background-color: rgba(0, 0, 0, 0.639);
+    box-sizing: border-box;
+    color: aliceblue;
+
+}
+.mon-an-row-1{
+padding-top: 20px;
+    /* margin-top: 20px; */
+}
+.mon-an-row-1 img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.mon-an-row-1 h2{
+    margin-top: 0;
+    text-align: center;
+    color: rgb(185, 245, 33);
+}
+p{
+    font-size: 15px;
+}
+.row form{
+    text-align: center;
+    padding-bottom: 15px;
+}
+.row form input{
+    background-color: rgb(229, 41, 41);
+    padding: 10px;
+    border-radius: 10px;
+}
+.footer{
+    padding: 20px 0;
+    border-top: 2px solid yellowgreen;
+    background-color: rgb(63, 57, 57);
+}
+.footer .col-md-4{
+    text-align: center;
+}
+#carousel-example-generic{
+    margin:  0px 15px 0px 15px;
+}
+.hide-table{
+    padding-bottom: 20px;
+    margin: 0 auto;
+    display: none;
+    max-width: fit-content;
+    text-align: center;
+}
+.hide-table p, tr:first-child{
+    text-align: center;
+    color: rgb(255, 255, 1);
+}
+table td{
+    border: beige solid 1px;
+    width: 150px;
+}
+/* table tr:first-child td:first-child{
+    border: none;
+} */
+/* table tr:first-child, tr:nth-child(2){
+    color: rgb(255, 255, 1);
+} */

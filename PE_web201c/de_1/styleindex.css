@@ -1,0 +1,34 @@
+.container{
+    background-color: #333333;
+}
+.img-circle{
+    width: 100%;
+    margin: 10px 0 10px 0;
+    height: 260px;
+}
+.paddingXY{
+    text-align: center;
+}
+.paddingXY img{
+    width: 100%;
+}
+.row .col-md-7 h1{
+    color: #AAAC34;
+}
+.row .col-md-7 p{
+    text-align: start;
+    color: aliceblue;
+}
+.footer{
+    border-top: #AAAC34 solid 2px;
+    color: aliceblue;
+    background-color: gray;
+    padding: 20px 0px;
+}
+.footer .col-md-4 {
+    text-align: center;
+}
+.img-responsive{
+    margin: 15px 0;
+    height: 330px !important;
+}

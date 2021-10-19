@@ -1,0 +1,32 @@
+.contain {
+    background-color: blanchedalmond;
+    width: 100%;
+    height: auto;
+}
+
+.abc {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    margin-right: 30px;
+    display: inline-flex;
+
+}
+
+@media (max-width: 1000px ) and (min-width: 500px ) {
+    .abc{
+        background-color: blueviolet;
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+    
+}
+@media (max-width: 499px ) and (min-width: 300px ) {
+    .abc{
+        background-color: rgb(72, 0, 0);
+        width: 30px;
+        height: 30px;
+
+    }
+}

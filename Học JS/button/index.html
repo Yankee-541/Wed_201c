@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duy Dang 01</title>
+    <style>
+        .tab {
+            width: 100px;
+            height: 40px;
+            display: inline-block;
+            border: 1px solid black;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab_active {
+            background-color: aqua;
+        }
+
+        .content-active {
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div data-id="1" class="tab tab_active">Tab 1</div>
+    <div data-id="2" class="tab">Tab 2</div>
+    <div data-id="3" class="tab">Tab 3</div>
+    <div class="content">
+        <div class="tab-content content1 content-active">Lorem ipsum dolor sit. Tab 1</div>
+        <div class="tab-content content2">Lorem ipsum dolor sit. Tab 2</div>
+        <div class="tab-content content3">Lorem ipsum dolor sit. Tab 3</div>
+    </div>
+
+</body>
+<script>
+    var tab = document.getElementsByClassName('tab');
+    var tab_content = document.getElementsByClassName('tab-content');
+    for (var i = 0; i < tab.length; i++) {
+        tab[i].addEventListener("click", function () {
+            for (var j = 0; j < tab.length; j++) {
+                tab[j].classList.remove("tab_active");
+                tab_content[j].classList.remove("content-active");
+
+            }
+            this.classList.add("tab_active");
+            var index = this.getAttribute("data-id");
+            tab_content[index -1].classList.add("content-active");
+
+        })
+    }
+</script>
+
+
+</html>

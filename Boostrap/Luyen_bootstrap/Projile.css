@@ -1,0 +1,111 @@
+.background {
+    margin: 0;
+    padding: 0;
+}
+.hearder {
+    height: 7%;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    border-bottom: solid rgb(227, 217, 217) 1px;
+    position: relative;
+}
+.hearder .icon_find{
+    width: 20%;
+    height: 7%;
+    padding-left: 15px;
+}
+.nav-tabs {
+    border-bottom: none;
+}
+.hearder img {
+    width: 37px;
+    height: 37px;
+    margin-top: -3px;
+
+}
+.hearder .icon_find .input-find {
+    margin-top: 8px;
+    height: 32px;
+    width: 80%;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(212, 208, 205);
+    padding-left:10px ;
+    font-size: 10px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hearder .nav .nav-item .hover:hover{
+    border: none;
+    background-color: rgb(194, 217, 236);
+    border-radius: 5px;
+
+}
+.hearder .nav .nav-item .hover{
+    height: 100%;
+    text-align: center;
+    text-decoration: none !important;
+    width: 100px;
+    border: none;
+}
+.hearder .btn-group button{
+    border-radius: 50px;
+    background-color: rgb(216, 220, 224);
+    color: black;
+    border: none;
+    border-color: white !important;
+}
+.hearder .btn-group button:focus{
+    box-shadow: none;
+}
+.hearder .btn-group button:hover{
+    border: none;
+    
+}
+.width{
+    width: 20%;
+}
+i{
+    font-size: 15px;
+}
+.border{
+    width: 13%;
+    border-radius: 50% ;
+}
+.hearder .btn-group button:hover{
+    background-color: rgba(200, 207, 205, 0.861);
+}
+.list-group{
+    display: flex;
+    justify-content: end !important;
+    padding: 5px;
+    margin-left: 75%;
+    width: 25% !important;
+    height: 57%;
+    box-shadow: 5px 5px 5px 5px #888888;
+    display: none;
+    position: fixed;
+    position: absolute;
+    top: 7%;
+}
+span{
+    font-size: 30px;
+}
+.list-group a img{
+    width: 40px;
+    height: 40px;
+    /* display: inline-flex; */
+}
+
+
+
+
+
+
+

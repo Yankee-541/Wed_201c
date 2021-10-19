@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form_login</title>
+    <link rel="stylesheet" href="./form_login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <h1>From login</h1>
+
+            <table>
+                <tr>
+                    <td>
+                        <p>Email</p>
+                    </td>
+                    <td>
+                        <input type="text" id="accout" placeholder="Email" onfocusout="inputValidate()">*
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Password</p>
+                    </td>
+                    <td>
+                        <div class="pass">
+                            <input type="password" name="" id="pass" onfocusout="validatePassword()" placeholder="Enter password">*
+                            <i onclick="myfun()" class="fa fa-eye"></i>
+
+                        </div>
+
+                    </td>
+                    <!-- <td> 
+                    </td> -->
+                </tr>
+
+            </table>
+            <!-- <input type="password" name="" id="passs" placeholder="Enter password">*
+            <i class="fa fa-eye"></i> -->
+
+
+            <button id="loin" type="submit" onclick="check()">login</button>
+
+        </div>
+    </div>
+
+</body>
+<script src="./form_login.js">
+
+</script>
+
+</html>

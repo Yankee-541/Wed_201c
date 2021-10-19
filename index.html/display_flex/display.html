@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .cha{
+            background-color: aqua;
+            width: 500px;
+            height: 500px;
+
+            display: flex;
+            flex-direction: column;
+            /*không khai báo thì mặc định là row*/
+            /*flex luôn có 2 chiều giá trị là col và row( mặc định) */
+            justify-content:space-around; 
+            /*căn theo flex direction: là chiều gì thì n sẽ căn theo chiều đấy*/
+            /*flex-start, end, space-between, space around*/
+            align-items: center;
+            /*căn theo chiều ngược lại của justify-content*/
+        }
+        .child{
+            background-color: burlywood;
+            width: 100px;
+            height: 100px;
+            /* display: inline-block; */
+        }
+        /* flex: tk cha làm cho tk con hiển thị theo quy tắc nào đấy do cha quy định */
+        /* inline: dùng bao nhiêu mất bấy nhiêu, 
+        block chiếm nguyên 1 hàng */
+        /* dùng độc inline thì sẽ không nhận width và height */
+        .child2{
+            background-color: blueviolet;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="cha">
+        <div class="child">
+            thẻ 1
+        </div>
+        <div class="child child2">
+            thẻ 2
+        </div>
+    </div>
+</body>
+</html>

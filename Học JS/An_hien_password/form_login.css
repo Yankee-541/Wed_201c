@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+.form{
+    width: 20%;
+    height: 50%;
+    margin: 0 auto;
+}
+.form h1{
+    width: 80%;
+    margin: 0 auto;
+}
+#loin{
+    width: 90%;
+    margin:0 auto;
+}
+.pass .fa{
+    vertical-align: middle;
+}

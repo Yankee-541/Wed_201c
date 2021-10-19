@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+/* .layout-item{
+    height: 700px;
+} */
+.layout-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.layout{
+    display: grid;
+    grid-template-columns: 200px 200px 100px;
+    grid-template-columns: 50% 20% 30%;
+    /* track line bắt đầu từ số 1 */
+    /* số cột 3 --> track line = số cột +1 */
+
+    /* grid-gap: grid-row-gap grid-column-gap: khoảng chống cột or hàng */
+    /* grid-column-gap: 40px; */
+    /* gap column: column count - 1 */
+    grid-gap: 20px;
+    /* grid-template-rows: 200px 600px ; */ /* thay đổi heigh từng row */
+    /* tỷ lệ 1 1 1 chia đều cho màn hình */
+    /*fr: free spacing*/
+    grid-template-columns: 1fr 1fr 1fr;
+}

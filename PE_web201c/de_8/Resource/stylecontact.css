@@ -1,0 +1,14 @@
+body{
+    /* width: 100%;
+    height: 100%; */
+    box-sizing: border-box;
+}
+
+.contact{
+    object-fit: fill;
+}
+input{
+    margin-left: 20px;
+    height: 30px;
+    width: 250px;
+}

@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.header{
+    background-color: #cbbcc270;
+}
+
+.contain{
+    width: 80%;
+    height: 80px;
+    margin: auto;
+}
+.d-flex{
+    display: flex;
+}
+.align-item-center{
+    align-items: center;
+}
+.justify-item-center{
+    align-items: center;
+}
+/* .justify-content-between{
+    justify-content:flex-end;
+} */
+.justify-content-evenly{
+    justify-content: space-evenly;
+}
+
+.logo{
+    width: 50%;
+}
+.logo h3{
+    font-size: 40px;
+    color: rgb(234, 125, 47);
+    font-family: 'Times New Roman', Times, serif;
+}
+.menu{
+    width: 50%;
+    text-align: end;
+}
+.menu ul{
+    list-style: none;
+}
+
+.menu ul li{
+    list-style: none;
+    position: relative;
+    padding: 5px;
+}
+.menu-none{
+    display: none;
+}
+.menu ul li:hover{
+    color: rgb(12, 4, 255);
+    height: 40px;
+    background-color: rgba(0, 251, 21, 0.375);
+    padding: 8px 8px;
+    border-radius: 50px;
+}
+.menu ul li:hover .sub-menu{
+    display: block;
+}
+.menu ul li:hover .triangle{
+    display: block;
+}
+.menu .sub-menu{
+    position: absolute;
+    top: 60px;
+    display: none;
+    border-top: 1px solid green !important;
+    border: 1px solid black;
+}
+
+.menu .triangle{
+    position: absolute;
+    top: 28px;
+    display: none;
+}
+.menu .triangle::before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid green;
+}
+.body{
+    box-sizing: border-box;
+}
+.body .body-contain{
+    width: 68%;
+    height: auto;
+    margin: auto;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content:space-between;
+}
+.body-contain .img{
+    width: 45%;
+    height: 45%;
+}
+.body-contain .img img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.body .about-me{
+    padding-left: 5px;
+    width: 50%;
+    height: 50%;
+}
+.about-me .title-w{
+   height: 150px;  
+}
+.about-me .relative{
+    position: relative;
+}
+.title h1{
+    position: absolute;
+    bottom: 20px;
+    font-size: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.text{
+    font-family: 'Times New Roman', Times, serif; font-size: 15px; color: #000000ab;
+}
+
+.about-me .inf{
+    width: 70%;
+    height: 35px;
+}
+.end{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+
+}
+.end .contain{
+    width: 90%;
+    height: 100px;
+    position: relative;
+    background-color: bisque;
+    border-top: 2px solid green;
+    display: flex;
+}
+.contain .inf{
+    width: 25%;
+    height: 100%;
+
+}
+.contain .absonute{
+    position: absolute;
+    top: 20px;
+}
+
+
+
+@media (max-width: 1200px){
+    .menu-reponsive{
+        display: inline-block;
+        width: 40%;
+        text-align: end;
+    }
+    .menu{
+        display: none;
+        position: relative;
+    }
+    .menu:hover{
+        position: absolute;
+        top: 60px;
+        display: none;
+        border-top: 1px solid green !important;
+        border: 1px solid black;
+    }
+}

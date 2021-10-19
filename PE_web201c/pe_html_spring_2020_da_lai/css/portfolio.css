@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(5, 71, 73);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+header nav ul{
+    list-style-type: none;
+    padding-bottom: 2px;
+
+}
+header nav ul li{
+    background-color: yellow;
+    margin-bottom: 3px;
+    margin-left: 3px;
+    border-top-right-radius: 5px;
+    float: right;
+    border-top-left-radius: 5px;
+}
+header nav ul li a{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.howtogrow {
+    width: 85%;
+    height: 66vh;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 2%;
+}
+.howtogrow p{
+    border: solid rgb(53, 209, 53) 2px;
+    width: 20%;
+    height: 85%;
+    margin: 0 auto;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 2%;
+}
+footer{
+    background-color: rgba(67, 226, 173, 0.916);
+    height: 15vh;
+    width: 100%;
+}
+footer p{
+    width: 100%;
+    padding-top: 15px;
+    text-align: center;
+    color: aliceblue;
+}
+footer p a{
+    text-decoration: none;
+}
+section{
+    box-sizing: border-box;
+}
+.left{
+    width: 40%;
+    height: 66vh;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+}
+.left #bigImg{
+    width: 75%;
+    height: 80%;
+    float: right;
+    /* border: solid black 1px; */
+}
+.right{
+    width: 55%;
+    height: 66vh;
+    display: inline-table;
+    margin-left: 20px;
+}
+.right img{
+    width: 70px;
+    height:70px;
+    margin: 7px;
+}
+.aboutme{
+    text-align: center;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+}

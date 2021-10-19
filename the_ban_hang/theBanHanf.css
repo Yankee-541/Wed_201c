@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+}
+
+.cards {
+  /*đặt tên biến*/
+  --spacing: 25px;
+  --columns: 4;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--spacing));
+  /*margin-left số âm sẽ kéo lại lề khi thằng con dùng bên dưới tránh 
+    trường hợp khoảng trống left rộng hơn right*/
+}
+
+.card {
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: aliceblue;
+  box-shadow: rgba(0, 0, 0, 0.2) 5px;
+  width: calc(calc(100% / var(--columns)) - var(--spacing));
+  margin-left: var(--spacing);
+  margin-bottom: var(--spacing);
+}
+img {
+  display: block;
+}
+.card-img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  flex-shrink: 0;
+  /*khoong cho phép phần tử đó còn lại,
+    luôn nằm ở 1 mức cố định nào đó, heigh 170 thì mãi chỉ là 170px */
+}
+.card-top {
+  padding: 25px;
+}
+.card-title {
+  font-weight: 600;
+  margin-bottom: 25px;
+  font-size: 20px;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  /* word-break: break-all; */
+}
+.card-user {
+  display: flex;
+  align-items: center;
+}
+.card-ava {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.card-inf{
+  padding-left: 20px; /*lấy hết phần còn lại để cố định W-H */
+  flex: 1; /* chiếm hết tất cả các khoảng chống còn lại */
+}
+.card-user-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+}
+.ard-user-name {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1;
+}
+.card-user-game {
+  color: rgb(166, 162, 156);
+  font-size: 10px;
+}
+.card-user-check {
+  color: greenyellow;
+  margin-left: 5px;
+  font-size: 5px;
+}
+
+.card-footer {
+  padding: 25px;
+  border-top: 1px solid rgb(101, 97, 97);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-live {
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: rgb(243, 159, 49);
+}
+.card-live span {
+  margin-left: 7px;
+  font-size: 10px;
+}
+
+.card-watching {
+  font-size: 15px;
+  color: rgba(111, 110, 110, 0.784);
+  font-weight: 500;
+}
+.card-content {
+  background-color: beige;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.card-top {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  /*chiếm hết tất cả phần còn lại của top*/
+}
+.card-user,
+.card-footer {
+  margin-top: auto;
+  /*đẩy khoảng trống xg dưới cùng 
+    margin-left:auto thì sang right
+    tương tự margin khác...
+    */
+  flex-shrink: 0; /*cố định chiều cao*/
+}
+.card {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .cards {
+    --spacing: 15px;
+    --columns: 2;
+  }
+}
+@media screen and (max-width: 426px) {
+  .cards {
+    --spacing: 10px;
+    --columns: 1;
+  }
+}

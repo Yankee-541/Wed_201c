@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+header{
+    background-color: rgb(151, 201, 226);
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    border-radius: 10px;
+}
+header h1{
+    padding: 15px 0;
+    color: rgb(125, 106, 81);
+}
+header nav a{
+    margin: 0 10%;
+}
+section{
+    margin-top: 1%;
+    border-radius: 10px;
+
+}
+.left{
+    background-color:rgb(151, 201, 226);
+    float: left;
+    width: 30%;
+    height: 68%;
+    
+}
+.left ul{
+    padding-top: 20px;
+    padding-left: 7px;
+}
+.left ul li{
+    margin-bottom: 5px;
+    padding-left: 3px;
+    width: 98%;
+    height: auto;
+    text-align: center;
+    background-color: antiquewhite;
+}
+.left li:hover{
+    background-color: aqua;
+    color: beige;
+}
+.left p{
+    width: 90%;
+    padding-left: 3px;
+}
+.left textarea{
+    margin: 5px 0;
+}
+.left button{
+    margin-top: 5px;
+    border-radius: 3px;
+}
+.right{
+    margin-left: 1%;
+    background-color:rgb(151, 201, 226);
+    display: inline-table;
+    width: 69%;
+    height: 68%;
+
+
+}
+.right ul {
+    margin-top: 20px;
+    padding-left: 70px;
+}
+
+.right p::first-line{
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+}
+.right p{
+    padding-top: 20px;
+    padding-left: 30px;
+
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+footer{
+    border-radius: 10px;
+    background-color:rgb(151, 201, 226);
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    margin-top: 1%;
+    font-size: 10px;
+    padding-top: 1%;
+}
